@@ -1,0 +1,1101 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../media/Orbitron-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Rajdhani";
+  src: url("../media/Rajdhani-SemiBold.ttf");
+}
+.btn-one {
+  width: -moz-max-content;
+  width: max-content;
+  background: linear-gradient(90deg, white 50%, black 50%);
+  background-size: 200%;
+  background-position: right;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: "Orbitron";
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 1036px) {
+  .btn-one {
+    padding: 12px 25px;
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-one {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+.btn-one:hover {
+  background-position: left;
+  color: black;
+}
+
+a.btn-two {
+  font-size: 20px;
+  font-family: "Orbitron";
+  text-decoration: none;
+  font-weight: 600;
+  background: radial-gradient(circle at top left, rgb(0, 0, 0) 15%, rgb(55, 0, 147) 50%, rgba(255, 165, 0, 0.5) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media screen and (max-width: 767px) {
+  a.btn-two {
+    font-size: 16px;
+  }
+}
+
+a.btn-three {
+  font-size: 16px;
+  font-family: "Orbitron";
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  a.btn-three {
+    font-size: 14px;
+  }
+}
+a.btn-three:hover {
+  color: black;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1036px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+h1 {
+  font-size: 80px;
+  font-family: "Orbitron";
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1366px) {
+  h1 {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  font-family: "Orbitron";
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1366px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  h2 {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "Rajdhani";
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1366px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+
+.gradient-text {
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.5) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.gradient-text-2 {
+  background: radial-gradient(circle at top left, rgb(0, 0, 0) 15%, rgb(55, 0, 147) 50%, rgb(255, 255, 255) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .gradient-text-2 {
+    display: inline;
+  }
+}
+
+header {
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  transition: 0.4s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  z-index: 99;
+}
+@media screen and (max-width: 767px) {
+  header {
+    top: 10px;
+    padding: 10px;
+  }
+}
+header.scrolled {
+  top: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+@media screen and (max-width: 767px) {
+  header.scrolled {
+    padding: 10px 0;
+  }
+}
+header .col {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+}
+header .col img {
+  width: 100%;
+  max-width: 150px;
+}
+@media screen and (max-width: 1036px) {
+  header .col img {
+    max-width: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .col img {
+    max-width: 100px;
+  }
+}
+header .col ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 1036px) {
+  header .col ul {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .col ul {
+    display: none;
+  }
+}
+header .col ul li {
+  position: relative;
+}
+header .col ul li:after {
+  content: "";
+  width: 0%;
+  background: white;
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: 0px;
+  transition: 0.4s ease-in-out;
+}
+header .col ul li:hover:after {
+  width: 100%;
+}
+header .col ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  transition: 0.4s ease-in-out;
+}
+header .col ul li a:hover {
+  color: white;
+}
+header .col .btn-one {
+  margin-left: auto;
+}
+
+section.home {
+  padding: 20px;
+  min-height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background: radial-gradient(circle at top left, rgba(255, 107, 0, 0.29) 15%, rgba(83, 0, 255, 0.7) 50%, rgb(12, 10, 55) 100%);
+  border-radius: 40px;
+}
+@media screen and (max-width: 767px) {
+  section.home {
+    padding: 0;
+    min-height: calc(100vh - 20px);
+    margin: 10px;
+    border-radius: 30px;
+  }
+}
+section.home .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 30px;
+}
+section.home .col h3 {
+  color: white;
+}
+section.home .col .btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+section.expertise .content-box p {
+  margin: 20px auto 0;
+  max-width: 700px;
+  text-align: center;
+}
+section.expertise .content-box h2 {
+  text-align: center;
+}
+section.expertise .slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.expertise .slide.slide-black {
+  background: radial-gradient(circle at top left, rgb(97, 49, 255) 15%, rgb(255, 205, 127) 50%, rgb(88, 23, 255) 100%);
+}
+section.expertise .slide.slide-black h1 {
+  color: white;
+  font-size: 170px;
+  text-align: left;
+}
+@media screen and (max-width: 1366px) {
+  section.expertise .slide.slide-black h1 {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  section.expertise .slide.slide-black h1 {
+    font-size: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.expertise .slide.slide-black h1 {
+    font-size: 100px;
+  }
+}
+section.expertise .slide.slide-black h2 {
+  text-align: left !important;
+  max-width: 70%;
+  margin-right: auto !important;
+}
+@media screen and (max-width: 767px) {
+  section.expertise .slide.slide-black h2 {
+    max-width: 100%;
+  }
+}
+section.expertise .slide.slide-black p {
+  text-align: left !important;
+  color: white;
+  max-width: 70% !important;
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+@media screen and (max-width: 767px) {
+  section.expertise .slide.slide-black p {
+    max-width: 100% !important;
+  }
+}
+section.expertise .slide.slide-white {
+  background: white;
+}
+section.expertise .slide.slide-white h1 {
+  color: black;
+  font-size: 170px;
+  text-align: right;
+}
+@media screen and (max-width: 1366px) {
+  section.expertise .slide.slide-white h1 {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  section.expertise .slide.slide-white h1 {
+    font-size: 120px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.expertise .slide.slide-white h1 {
+    font-size: 100px;
+  }
+}
+section.expertise .slide.slide-white h2 {
+  text-align: right !important;
+  max-width: 70%;
+  margin-left: auto !important;
+}
+@media screen and (max-width: 767px) {
+  section.expertise .slide.slide-white h2 {
+    max-width: 100%;
+  }
+}
+section.expertise .slide.slide-white p {
+  text-align: right !important;
+  color: black;
+  max-width: 70% !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+@media screen and (max-width: 767px) {
+  section.expertise .slide.slide-white p {
+    max-width: 100% !important;
+  }
+}
+
+section.services {
+  padding: 100px 20px;
+  background: white;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  section.services {
+    padding: 100px 0px;
+  }
+}
+section.services:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+section.services .col-md-6 {
+  position: relative;
+}
+section.services .col-md-6 .content-box {
+  position: sticky;
+  top: 100px;
+  max-width: 500px;
+}
+section.services .col-md-6 .content-box p {
+  margin-top: 20px;
+}
+section.services .col-md-6 .items {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+@media screen and (max-width: 767px) {
+  section.services .col-md-6 .items {
+    gap: 50px;
+    margin-top: 50px;
+  }
+}
+section.services .col-md-6 .items .item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  section.services .col-md-6 .items .item {
+    gap: 15px;
+  }
+}
+section.services .col-md-6 .items .item .icon {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  border-radius: 50px;
+}
+@media screen and (max-width: 767px) {
+  section.services .col-md-6 .items .item .icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+section.services .col-md-6 .items .item:nth-child(1) .icon {
+  border-radius: 50px 20px 80px 10px;
+}
+section.services .col-md-6 .items .item:nth-child(2) .icon {
+  border-radius: 10px 90px 30px 60px;
+}
+section.services .col-md-6 .items .item:nth-child(3) .icon {
+  border-radius: 80px 30px 20px 50px;
+}
+section.services .col-md-6 .items .item:nth-child(4) .icon {
+  border-radius: 30px 60px 10px 90px;
+}
+section.services .col-md-6 .items .item:nth-child(5) .icon {
+  border-radius: 100px 10px 70px 40px;
+}
+
+section.portfolio {
+  padding: 100px 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.portfolio {
+    padding: 100px 0px;
+  }
+}
+section.portfolio .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  section.portfolio .col {
+    gap: 30px;
+  }
+}
+section.portfolio .col .content-box p {
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+section.portfolio .col h2 {
+  text-align: center;
+}
+section.portfolio .col .filters {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  section.portfolio .col .filters {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+section.portfolio .col .filters button {
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  background-size: 200%;
+  background-position: right;
+  color: white;
+  font-size: 20px;
+  font-family: "Orbitron";
+  font-weight: 400;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: navajowhite;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 1036px) {
+  section.portfolio .col .filters button {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.portfolio .col .filters button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+section.portfolio .col .filters button.active {
+  background-position: left;
+  color: black;
+}
+section.portfolio .col .items {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1036px) {
+  section.portfolio .col .items {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.portfolio .col .items {
+    flex-direction: column;
+  }
+}
+section.portfolio .col .items .item {
+  max-width: calc(33.3333% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.4s ease-in-out;
+  width: 0%;
+  opacity: 0;
+  visibility: hidden;
+}
+@media screen and (max-width: 767px) {
+  section.portfolio .col .items .item {
+    max-width: calc(100% - 0px);
+    margin-bottom: 20px;
+    display: none;
+  }
+}
+section.portfolio .col .items .item.active {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
+section.portfolio .col .items .item img {
+  width: 100%;
+  border-radius: 40px;
+  transition: 0.4s ease-in-out;
+  filter: saturate(0);
+}
+@media screen and (max-width: 767px) {
+  section.portfolio .col .items .item img {
+    max-height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+section.portfolio .col .items .item h3, section.portfolio .col .items .item p {
+  color: black;
+}
+section.portfolio .col .items .item:hover img {
+  transform: scale(0.9);
+  filter: saturate(1);
+}
+
+section.testimonials {
+  padding: 150px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media screen and (max-width: 1036px) {
+  section.testimonials {
+    padding: 100px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.testimonials {
+    padding: 100px 0px;
+  }
+}
+section.testimonials h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+section.testimonials .swiper-slide {
+  padding: 3px;
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+}
+section.testimonials .swiper-slide .item {
+  background: white;
+  padding: 100px 70px;
+}
+@media screen and (max-width: 1366px) {
+  section.testimonials .swiper-slide .item {
+    padding: 90px 60px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  section.testimonials .swiper-slide .item {
+    padding: 70px 40px 40px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.testimonials .swiper-slide .item {
+    padding: 70px 20px 20px 20px;
+  }
+}
+section.testimonials .swiper-slide .item .review {
+  font-style: italic;
+}
+section.testimonials .swiper-slide .item p.author {
+  font-size: 20px;
+  font-family: "Orbitron";
+  color: black;
+  text-align: right;
+  margin-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  section.testimonials .swiper-slide .item p.author {
+    font-size: 18px;
+  }
+}
+section.testimonials .swiper-slide .item p.designation {
+  font-size: 16px;
+  font-family: "Orbitron";
+  color: black;
+  text-align: right;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+section.testimonials .swiper-slide .item svg {
+  width: 120px;
+  height: 120px;
+  color: black;
+  opacity: 0.2;
+  margin-top: -50px;
+}
+@media screen and (max-width: 767px) {
+  section.testimonials .swiper-slide .item svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+section.marquee {
+  padding: 200px 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, white 50%, transparent 50%);
+}
+@media screen and (max-width: 1036px) {
+  section.marquee {
+    padding: 100px 0;
+  }
+}
+section.marquee .items {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  section.marquee .items {
+    gap: 30px;
+  }
+}
+section.marquee .items div {
+  width: -moz-max-content;
+  width: max-content;
+}
+section.marquee .items div.left {
+  transform: translateX(-50%);
+}
+section.marquee .items div.left h2 {
+  color: black;
+}
+@media screen and (max-width: 767px) {
+  section.marquee .items div.left h2 {
+    font-size: 18px;
+  }
+}
+section.marquee .items div.right h2 {
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  section.marquee .items div.right h2 {
+    font-size: 18px;
+  }
+}
+
+section.faq {
+  background: radial-gradient(circle at top left, rgba(255, 0, 0, 0.26) 15%, rgba(98, 0, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  padding: 300px 20px 200px 20px;
+  margin-top: -300px;
+}
+@media screen and (max-width: 1036px) {
+  section.faq {
+    padding: 200px 20px 100px 20px;
+    margin-top: -180px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.faq {
+    padding: 200px 0px 100px 0px;
+    margin-top: -140px;
+  }
+}
+section.faq h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  section.faq h2 {
+    margin-bottom: 30px;
+  }
+}
+section.faq .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section.faq .accordion .accordion-item {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+section.faq .accordion .accordion-item h2 {
+  margin: 0;
+  color: black;
+}
+section.faq .accordion .accordion-item h2 button {
+  background: white;
+  border: none;
+  border-radius: 0 !important;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  box-shadow: none;
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+  padding: 20px;
+}
+@media screen and (max-width: 767px) {
+  section.faq .accordion .accordion-item h2 button {
+    font-size: 16px;
+  }
+}
+section.faq .accordion .accordion-item h2 button.collapsed {
+  opacity: 0.7;
+}
+section.faq .accordion .accordion-item .accordion-body {
+  font-size: 18px;
+  font-family: "Rajdhani";
+  color: black;
+  opacity: 0.7;
+  padding: 10px 20px 20px 20px;
+}
+@media screen and (max-width: 767px) {
+  section.faq .accordion .accordion-item .accordion-body {
+    font-size: 16px;
+  }
+}
+
+section.about {
+  padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  section.about {
+    padding: 0;
+  }
+}
+section.about h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  section.about h2 {
+    margin-bottom: 30px;
+  }
+}
+section.about h3 {
+  text-align: center;
+}
+
+section.contact {
+  padding: 150px 20px;
+}
+@media screen and (max-width: 1036px) {
+  section.contact {
+    padding: 100px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.contact {
+    padding: 100px 0px;
+  }
+}
+section.contact p {
+  margin-top: 20px;
+}
+section.contact .form-wrapper {
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  background-size: 200% 200%;
+  padding: 2px;
+  animation: rotateGradient 7s linear infinite;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  section.contact .form-wrapper {
+    margin-top: 20px;
+  }
+}
+section.contact .form-wrapper form {
+  background: white;
+  padding: 70px;
+}
+@media screen and (max-width: 1366px) {
+  section.contact .form-wrapper form {
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  section.contact .form-wrapper form {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.contact .form-wrapper form {
+    padding: 25px 15px;
+  }
+}
+section.contact .form-wrapper form button.btn-one {
+  margin-left: auto;
+  display: block;
+  margin-top: 30px;
+  border: none;
+}
+section.contact .mb-3 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2px;
+  background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+}
+section.contact .mb-3 label {
+  width: 100%;
+  background: white;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+section.contact .mb-3 input, section.contact .mb-3 textarea {
+  border-radius: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 5px 0;
+}
+
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+footer.footer {
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background: radial-gradient(circle at top left, rgba(255, 132, 0, 0.36) 15%, rgba(53, 0, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
+  border-radius: 40px;
+}
+@media screen and (max-width: 1036px) {
+  footer.footer {
+    padding: 50px 20px 30px 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.footer {
+    margin: 10px;
+    border-radius: 30px;
+    padding: 40px 0px 10px 0px;
+  }
+}
+@media screen and (max-width: 1036px) {
+  footer.footer .col-md-6 {
+    width: 42%;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.footer .col-md-6 {
+    width: 100%;
+  }
+}
+footer.footer .social-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+footer.footer .social-icons svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 767px) {
+  footer.footer .social-icons svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+footer.footer .social-icons svg:hover {
+  color: black;
+}
+footer.footer .footer-logo img {
+  max-width: 250px;
+}
+@media screen and (max-width: 1036px) {
+  footer.footer .footer-logo img {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.footer .footer-logo img {
+    max-width: 150px;
+  }
+}
+footer.footer .footer-logo p {
+  color: white;
+  margin-top: 20px;
+  font-size: 16px;
+  max-width: 340px;
+}
+@media screen and (max-width: 1036px) {
+  footer.footer .footer-logo p {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.footer .footer-logo p {
+    max-width: 100%;
+  }
+}
+footer.footer .footer-bottom p {
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1036px) {
+  footer.footer .footer-bottom p {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.footer .footer-bottom p {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+}
+footer.footer h3 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 30px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 1036px) {
+  footer.footer h3 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.footer h3 {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+}
+footer.footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer.footer ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Rajdhani";
+}
+footer.footer ul li {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer.footer ul li svg {
+  color: white;
+  margin-right: 5px;
+}
+footer.footer ul li:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s ease-in-out;
+}
+footer.footer ul li:hover:after {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
