@@ -196,7 +196,7 @@ header {
   top: 20px;
   transition: 0.4s ease-in-out;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  z-index: 99;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   header {
@@ -235,54 +235,185 @@ header .col img {
     max-width: 100px;
   }
 }
-header .col ul {
+header .col .btn-one {
+  margin-left: auto;
+}
+header .menu-toggle {
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
-  list-style: none;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 6;
 }
 @media screen and (max-width: 1036px) {
-  header .col ul {
-    gap: 20px;
+  header .menu-toggle {
+    width: 45px;
+    height: 45px;
   }
 }
 @media screen and (max-width: 767px) {
-  header .col ul {
-    display: none;
+  header .menu-toggle {
+    width: 38px;
+    height: 38px;
+    margin-left: -30px;
   }
 }
-header .col ul li {
-  position: relative;
-}
-header .col ul li:after {
+header .menu-toggle:before {
   content: "";
-  width: 0%;
   background: white;
   position: absolute;
-  height: 1px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  z-index: 5;
+  border-radius: 50%;
+}
+header .menu-toggle.opened:before {
+  transform: scale(100);
+}
+header .menu-toggle:after {
+  content: "";
+  background: transparent;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
   left: 0;
-  bottom: 0px;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   transition: 0.4s ease-in-out;
 }
-header .col ul li:hover:after {
-  width: 100%;
+header .menu-toggle:hover:after {
+  transform: scale(1.7);
 }
-header .col ul li a {
+header .menu-toggle svg {
+  width: 35px;
+  height: 35px;
+  z-index: 8;
+}
+@media screen and (max-width: 1036px) {
+  header .menu-toggle svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .menu-toggle svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+header .menu-toggle .line {
+  fill: none;
+  stroke: #0f117a;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+header .menu-toggle .line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+header .menu-toggle .line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+header .menu-toggle .line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+header .menu-toggle.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+header .menu-toggle.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+header .menu-toggle.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.menu-wrapper {
+  visibility: hidden;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 100px);
+  top: 100px;
+  left: 0;
+}
+@media screen and (max-width: 767px) {
+  .menu-wrapper {
+    top: 80px;
+  }
+}
+.menu-wrapper .menu {
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  width: 0%;
+  transition: 0.4s ease-in-out;
+  overflow: hidden;
+}
+.menu-wrapper .menu a {
   text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-family: "Rajdhani";
-  font-weight: 600;
+  font-size: 80px;
+  font-family: "Orbitron";
+  font-weight: 400;
   line-height: normal;
   letter-spacing: normal;
   transition: 0.4s ease-in-out;
+  background: radial-gradient(circle at top left, rgb(0, 0, 0) 15%, rgb(55, 0, 147) 50%, rgba(255, 165, 0, 0.5) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  background-position: left;
 }
-header .col ul li a:hover {
-  color: white;
+@media screen and (max-width: 1366px) {
+  .menu-wrapper .menu a {
+    font-size: 70px;
+  }
 }
-header .col .btn-one {
-  margin-left: auto;
+@media screen and (max-width: 1036px) {
+  .menu-wrapper .menu a {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-wrapper .menu a {
+    font-size: 50px;
+  }
+}
+.menu-wrapper .menu a:hover {
+  background-position: right;
+}
+.menu-wrapper.opened {
+  visibility: visible;
+}
+.menu-wrapper.opened .menu {
+  width: 100%;
 }
 
 section.home {
@@ -874,6 +1005,10 @@ section.contact {
 section.contact p {
   margin-top: 20px;
 }
+section.contact .content-box {
+  position: sticky;
+  top: 100px;
+}
 section.contact .form-wrapper {
   background: radial-gradient(circle at top left, rgba(255, 165, 0, 0.2) 15%, rgba(0, 8, 255, 0.7) 50%, rgb(1, 0, 28) 100%);
   background-size: 200% 200%;
@@ -928,7 +1063,15 @@ section.contact .mb-3 input, section.contact .mb-3 textarea {
   border: none;
   outline: none;
   box-shadow: none;
-  padding: 5px 0;
+  padding: 5px;
+}
+section.contact .mb-3 select {
+  padding: 5px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
 }
 
 @keyframes rotateGradient {
