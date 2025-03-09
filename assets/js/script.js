@@ -161,6 +161,16 @@ gsap.utils.toArray(".slide").forEach((panel, i) => {
   });
 });
 
+$('.menu-toggle').click(function(){
+  this.classList.toggle('opened');
+  $('.menu-wrapper').toggleClass('opened');
+});
+
+$('.menu-wrapper a').click(function(){
+  $('.menu-toggle').toggleClass('opened');
+  $('.menu-wrapper').toggleClass('opened');
+});
+
 const lenis = new Lenis();
 lenis.on('scroll', ScrollTrigger.update);
 gsap.ticker.add((time) => {
